@@ -6,8 +6,8 @@ font-family:"Raleway";
 box-sizing: border-box;
 }
 body{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -99,12 +99,16 @@ header{
     #bloc_hebergement{
         display: flex;
         justify-content: space-between;
-        gap: 40px;
-    }
+        gap: 40px
+      }
     #sous_bloc_marseille{
-        flex-basis: 66%;
+        display: flex;
+        flex-direction: column;
         background-color: #F2F2F2;
         border-radius: 15px;
+    }
+    h1, h2{
+        margin-left: 20px;
     }
     #hebergement_marseille{
         display: flex;
@@ -116,9 +120,10 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
         background-color: white;
         flex-basis: 30%;
-        border: 2px solid white;
+        border: 1px solid white;
         border-radius: 15px;
     }
     .hotel h1{
@@ -128,7 +133,8 @@ header{
         font-size: 0.8rem;
     }
     .hotel img{
-        height: 7rem;
+        height: 10rem;
+        width: 100%;
         border-radius: 10px 10px 0 0;
     }
     /* bloc les plsu populaires */
