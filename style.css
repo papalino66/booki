@@ -1,0 +1,256 @@
+/* police */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    font-family:"Raleway";
+    box-sizing: border-box;
+    }
+    
+/* corps de page */
+
+/* html{
+    max-width: 1440px;
+} */
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*  en-tête */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+nav{
+    display: flex;
+    gap: 4rem;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+/* bloc de recherche */
+
+#bloc_recherche{
+    display: flex;
+    flex-direction: column;
+}
+
+#bloc_recherche h1{
+    font-size: 1.3rem;
+    
+}
+#barre_recherche{
+    display: flex;
+}
+#barre_recherche i{
+    padding: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem 0 0 1.5rem
+}
+#barre_recherche input{
+    padding-left: 2rem;
+    border: 1px solid #F2F2F2
+}
+#bouton{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 1.5rem 1.5rem 0;
+    border: 1px solid #F2F2F2;
+}
+
+
+
+
+
+/* flitre */
+#filtre{
+    display:flex;
+    align-items:center;
+    gap: 4rem;
+    
+}
+#lien_filtre {
+    display: flex;
+    gap: 4rem;
+}
+#lien_filtre i{
+    padding: 1rem;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    color: #0065FC;
+}
+#lien_filtre a{
+    text-decoration: none;
+    font-size: 1rem;
+    border: 1px solid #F2F2F2;
+    border-radius: 1.5rem;
+}
+/* hebergement a marseille */
+#bloc_hebergement{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+span{
+    color: black;
+}
+
+#sous_bloc_marseille{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 30px;
+    border-radius: 1.5rem;
+    background-color: #F2F2F2;
+}
+#sous_bloc_marseille{
+    background-color: #F2F2F2;
+    margin-right: 2rem;
+
+}
+#hebergement_marseille{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+    
+}
+.hotel{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 1.5rem;
+    border: 2px solid white;
+    flex-basis: 30%;
+}
+.hotel img{
+    width: 19rem;
+    height: 10rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    object-fit: cover;
+    
+}
+.hotel h1{
+    font-size: 1rem;
+}
+.hotel p{
+    font-size: 0.8rem;
+}
+/* les plus populaires */
+#sous_bloc_pop{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 2;
+    background-color: #F2F2F2;
+    gap: 30px;
+    border-radius: 1.5rem;
+}
+#liste_pop{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.hotel_pop{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 1.5rem;
+}
+.hotel_pop h1{
+    font-size: 1rem;
+}
+.hotel_pop img{
+    width: 8rem;
+    height: 9rem;
+    object-fit: cover;
+    border-radius: 1.5rem 0 0 1.5rem;
+    border: 5px solid white;
+    
+}
+.hotel_pop_texte{
+    display: flex;
+    flex-direction: column;
+}
+.hotel_pop_texte h1{
+    font-size: 1rem;
+}
+@media (max-width:992px){
+    #bloc_hebergement{
+        flex-direction: column-reverse;
+    
+    }
+}
+/* activité */
+#bloc_activites{
+    display: flex;
+    justify-content: space-between;
+}
+.bloc_activites1{
+    /* display: flex;
+    flex-direction: column; */
+}
+#vieux_port{
+    border: 2px solid #F2F2F2;
+    border-radius: 1.5rem;
+}
+#parc{
+    border: 2px solid #F2F2F2;
+    border-radius: 1.5rem;
+}
+.bloc_activites2{
+    display: flex;
+    flex-direction: column;
+}
+#fort{
+    border: 2px solid #F2F2F2;
+    border-radius: 1.5rem;
+}
+#iles{
+    border: 2px solid #F2F2F2;
+    border-radius: 1.5rem;
+    
+}
+#notre_dame{
+    flex-grow: 2;
+    border: 2px solid #F2F2F2;
+    border-radius: 1.5rem;
+}
+#longchamp{
+    flex-grow: 1;
+    border: 2px solid #F2F2F2;
+    border-radius: 1.5rem;
+}
+
+.bloc_activites1 img{
+    width: 15rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+.bloc_activites2 img{
+    width: 15rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+/* pied de page */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding-right: 15rem;
+    padding-left: 2rem;
+}
+footer h1{
+    font-size: 1rem;
+}
